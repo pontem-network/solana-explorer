@@ -9,9 +9,10 @@ export enum Cluster {
     Testnet,
     Devnet,
     Custom,
+    LumioDevnet,
 }
 
-export const CLUSTERS = [Cluster.MainnetBeta, Cluster.Testnet, Cluster.Devnet, Cluster.Custom];
+export const CLUSTERS = [Cluster.MainnetBeta, Cluster.Testnet, Cluster.Devnet, Cluster.Custom, Cluster.LumioDevnet];
 
 export function clusterSlug(cluster: Cluster): string {
     switch (cluster) {
@@ -23,6 +24,8 @@ export function clusterSlug(cluster: Cluster): string {
             return 'devnet';
         case Cluster.Custom:
             return 'custom';
+        case Cluster.LumioDevnet:
+            return 'lumio-devnet';
     }
 }
 
@@ -36,12 +39,15 @@ export function clusterName(cluster: Cluster): string {
             return 'Devnet';
         case Cluster.Custom:
             return 'Custom';
+        case Cluster.LumioDevnet:
+            return 'Lumio Devnet';
     }
 }
 
 export const MAINNET_BETA_URL = 'https://api.mainnet-beta.solana.com';
 export const TESTNET_URL = 'https://api.testnet.solana.com';
 export const DEVNET_URL = 'https://api.devnet.solana.com';
+export const LUMIO_DEVNET_URL = 'https://svm.devnet.lumio.io';
 
 export function clusterUrl(cluster: Cluster, customUrl: string): string {
     const modifyUrl = (url: string): string => {
@@ -61,7 +67,9 @@ export function clusterUrl(cluster: Cluster, customUrl: string): string {
             return process.env.NEXT_PUBLIC_TESTNET_RPC_URL ?? modifyUrl(TESTNET_URL);
         case Cluster.Custom:
             return customUrl;
+        case Cluster.LumioDevnet:
+            return process.env.NEXT_PUBLIC_LUMIO_DEVNET_RPC_URL ?? modifyUrl(LUMIO_DEVNET_URL);
     }
 }
 
-export const DEFAULT_CLUSTER = Cluster.MainnetBeta;
+export const DEFAULT_CLUSTER = Cluster.LumioDevnet;

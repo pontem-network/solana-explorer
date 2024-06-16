@@ -11,9 +11,9 @@ import { Rubik } from 'next/font/google';
 import { Metadata } from 'next/types';
 
 export const metadata: Metadata = {
-    description: 'Inspect transactions, accounts, blocks, and more on the Solana blockchain',
+    description: 'Inspect transactions, accounts, blocks, and more on the SuperLumio Devnet blockchain',
     manifest: '/manifest.json',
-    title: 'Explorer | Solana',
+    title: 'Explorer | SuperLumio',
     viewport: {
         initialScale: 1,
         maximumScale: 1,

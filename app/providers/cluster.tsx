@@ -60,8 +60,10 @@ function parseQuery(searchParams: ReadonlyURLSearchParams | null): Cluster {
         case 'testnet':
             return Cluster.Testnet;
         case 'mainnet-beta':
-        default:
             return Cluster.MainnetBeta;
+        case 'lumio-devnet':
+        default:
+            return Cluster.LumioDevnet;
     }
 }
 

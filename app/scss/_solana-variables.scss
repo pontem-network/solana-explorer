@@ -10,30 +10,30 @@ $body-bg: #f9fdfc !default;
 // Colors
 
 $white: #ffffff !default;
-$gray-100: #f9fdfc;
-$gray-200: #f1f8f6;
-$gray-300: #e5ebe9;
-$gray-400: #c6e6de;
-$gray-500: #abd5c6;
-$gray-600: #86b8b6;
-$gray-700: #698582;
-$gray-800: #387462;
-$gray-900: #1b4e3f;
+$gray-100: #E9E8F1;
+$gray-200: #DFDDEB;
+$gray-300: #D5D3E4;
+$gray-400: #B6B3D1;
+$gray-500: #ACA8CB;
+$gray-600: #847DB2;
+$gray-700: #665E9E;
+$gray-800: #28253E;
+$gray-900: #2F2B49;
 $black: #232323;
 
 $rainbow-1: #fa62fc;
 $rainbow-2: #be84e8;
 $rainbow-3: #79abd2;
 $rainbow-4: #38d0bd;
-$rainbow-5: #1dd79b;
+$rainbow-5: #946BEC;
 
-$primary: #42ba96 !default;
-$primary-dark: #33a382 !default;
-$success: #19be56 !default;
+$primary: #946BEC !default;
+$primary-dark: #946BEC !default;
+$success: #946BEC !default;
 $secondary: $gray-700;
 $danger: #b45be1;
 $warning: #d83aeb !default;
-$info: #43b5c5 !default;
+$info: #946BEC !default;
 $light: $gray-100;
 $dark: $gray-900;
 
@@ -54,14 +54,14 @@ $link-color: $primary-dark;
 }
 
 .text-rainbow {
-    background: linear-gradient(0.3turn, #e400ff, #00ffbd);
+    background: linear-gradient(0.3turn, #e400ff, #946BEC);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .bg-rainbow {
-    background: linear-gradient(0.3turn, #e400ff, #00ffbd);
+    background: linear-gradient(0.3turn, #e400ff, #946BEC);
 }
 
 .bg-rainbow-1 {
@@ -74,10 +74,10 @@ $link-color: $primary-dark;
     background: #79abd2;
 }
 .bg-rainbow-4 {
-    background: #38d0bd;
+    background: #946BEC;
 }
 .bg-rainbow-5 {
-    background: #1dd79b;
+    background: #946BEC;
 }
 
 .text-rainbow-1 {
@@ -90,8 +90,8 @@ $link-color: $primary-dark;
     color: #79abd2;
 }
 .text-rainbow-4 {
-    color: #38d0bd;
+    color: #946BEC;
 }
 .text-rainbow-5 {
-    color: #1dd79b;
+    color: #946BEC;
 }

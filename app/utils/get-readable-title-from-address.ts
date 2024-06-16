@@ -30,8 +30,11 @@ export default async function getReadableTitleFromAddress(props: AddressPageMeta
         case 'testnet':
             cluster = Cluster.Testnet;
             break;
-        default:
+        case 'mainnet-beta':
             cluster = Cluster.MainnetBeta;
+            break;
+        default:
+            cluster = Cluster.LumioDevnet;
     }
 
     try {
